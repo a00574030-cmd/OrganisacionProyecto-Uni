@@ -1,8 +1,4 @@
 # OrganizaciónProyecto-Uni
 
-Product Owner (PO)- Mané
-Líder Técnico (TL)-Javi
-Desarrollador UI-Andrés
-Desarrollador de Datos/API-Miranda
-QA/AnalistaProduct Owner (PO)-José Luis
+
 
