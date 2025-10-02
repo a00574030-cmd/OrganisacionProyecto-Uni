@@ -1,0 +1,1 @@
+Los Cambios Realizados al codigo nos permiten ver la grafica de un calculo de temperatura en monterrey tambien podemos ver cambios estilisticos como el color de las graficas al igual que los marcadores, las lineas y hasta la inclusion de un grid para mas facilmente detectar los valores precisamente
