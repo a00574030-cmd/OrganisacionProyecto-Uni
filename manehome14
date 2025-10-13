@@ -1,0 +1,37 @@
+import tkinter as tk
+from tkinter import ttk
+
+# Ejemplo de funciones que abrirían cada ventana:
+def open_win_objetivos(parent):
+    win = tk.Toplevel(parent)
+    win.title("Objetivos")
+    ttk.Label(win, text="Aquí va la ventana de objetivos").pack(padx=20, pady=20)
+
+def open_win_calendario(parent):
+    win = tk.Toplevel(parent)
+    win.title("Calendario")
+    ttk.Label(win, text="Aquí va el calendario 🗓️").pack(padx=20, pady=20)
+
+def open_win_anuncios(parent):
+    win = tk.Toplevel(parent)
+    win.title("Anuncios")
+    ttk.Label(win, text="Aquí van los anuncios 📢").pack(padx=20, pady=20)
+
+def open_win_home(parent: tk.Tk):
+    win = tk.Toplevel(parent)
+    win.title("Home")
+    win.geometry("360x220")
+    frm = ttk.Frame(win, padding=16)
+    frm.pack(fill="both", expand=True)
+
+    ttk.Label(frm, text="¡Bienvenid@s!", font=("Segoe UI", 11, "bold")).pack(pady=(0, 8))
+    ttk.Label(frm, text="Explora tus herramientas.").pack(pady=(0, 12))
+    
+    # Cambiamos los botones para que abran ventanas, no mensajes:
+    ttk.Button(frm, text="Objetivos",
+               command=lambda: open_win_objetivos(win)).pack(pady=3)
+    ttk.Button(frm, text="Calendario",
+               command=lambda: open_win_calendario(win)).pack(pady=3)
+    ttk.Button(frm, text="Anuncios",
+               command=lambda: open_win_anuncios(win)).pack(pady=3)
+    ttk.Button(frm, text="Cerrar", command=win.destroy).pack(pady=8)
